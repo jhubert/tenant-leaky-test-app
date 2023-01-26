@@ -28,3 +28,13 @@ group :development do
   # gem "spring"
 end
 
+source "https://enterprise.contribsys.com/" do
+  gem 'sidekiq-pro'
+  gem 'sidekiq-ent'
+end
+gem 'sidekiq', '< 7'
+
+gem 'ros-apartment', require: 'apartment'
+gem 'ros-apartment-sidekiq', require: 'apartment-sidekiq'
+
+gem 'dbgemtest', path: 'lib/dbgemtest'

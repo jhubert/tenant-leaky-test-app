@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if ! eval overmind -v > /dev/null
+then
+  echo "Installing Overmind..."
+  brew install tmux overmind
+fi
+
+overmind start -f Procfile.dev -t 5 --stop-signals worker=KILL
