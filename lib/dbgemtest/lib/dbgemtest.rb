@@ -1,4 +1,4 @@
 module Dbgemtest
 end
 
-require "dbgemtest/railtie" if defined?(Rails::Railtie) && ENV['BROKEN']
+require "dbgemtest/railtie" if defined?(Rails::Railtie)
