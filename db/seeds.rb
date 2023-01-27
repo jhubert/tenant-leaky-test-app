@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Apartment::Tenant.create('first') unless Apartment.connection.schema_exists?('first')
+Apartment::Tenant.create('first')
