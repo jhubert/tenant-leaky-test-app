@@ -1,5 +1,3 @@
-require 'sidekiq-ent/web'
-
 # Silence the ascii banner
 if defined?(::Sidekiq::CLI)
   class Sidekiq::CLI
